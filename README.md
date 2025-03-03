@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Hikaye - Sesli Kitap Platformu
 
 Hikaye, kullanıcılara çeşitli kategorilerde sesli kitaplar sunan modern bir web platformudur. Bu uygulama, kitapseverlerin istedikleri zaman, istedikleri yerde en sevdikleri kitapları dinlemelerini sağlar.
@@ -63,3 +64,7 @@ Hikaye, kullanıcılara çeşitli kategorilerde sesli kitaplar sunan modern bir 
 
 Bu proje [MIT Lisansı](LICENSE) altında lisanslanmıştır.
 
+=======
+# BookStory-App
+Modern bir sesli kitap platformu web uygulaması. Kullanıcılar kitap kategorilerini keşfedebilir, trend olan kitapları görebilir ve favori sesli kitaplarını dinleyebilir.
+>>>>>>> f5da21d7e716a1973146738acc32e19fb60800c7
