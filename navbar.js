@@ -12,10 +12,8 @@ document.addEventListener('DOMContentLoaded', function() {
             <span></span>
         `;
         
-        // Navbara mobil menü butonunu ekle
         navbar.insertBefore(mobileMenuBtn, navbar.querySelector('.nav-links'));
         
-        // Tıklama olayını ekle
         mobileMenuBtn.addEventListener('click', function() {
             document.querySelector('.nav-links').classList.toggle('show');
         });
@@ -33,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Sayfanın başına dönme butonu ekle
+    
     const body = document.querySelector('body');
     const scrollTopBtn = document.createElement('button');
     scrollTopBtn.id = 'scroll-top';
@@ -60,17 +58,12 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Logo elementini seç
-    const logo = document.querySelector('.logo');
     
-    // Logo'ya tıklama olayı ekle
+    const logo = document.querySelector('.logo');   
     if (logo) {
-        logo.addEventListener('click', function() {
-            // Ana sayfaya yönlendir
+        logo.addEventListener('click', function() {       
             window.location.href = 'index.html';
-        });
-        
-        // İmleci logo üzerinde fare işaretçisini değiştir
+        });   
         logo.style.cursor = 'pointer';
     }
 });
@@ -81,18 +74,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const kitaplarLink = document.querySelector('.nav-links a[href="#"]');
     
     if (kitaplarLink && kitaplarLink.textContent === 'Kitaplar') {
-        // Tıklama olayını dinle
         kitaplarLink.addEventListener('click', function(e) {
             e.preventDefault(); // Varsayılan link davranışını engelle
-            
-            // Ana sayfadaysa trend kitaplar bölümüne kaydır
             if (window.location.pathname === '/' || window.location.pathname.includes('index.html')) {
                 const trendingSection = document.querySelector('.trending');
                 if (trendingSection) {
                     trendingSection.scrollIntoView({ behavior: 'smooth' });
                 }
             } else {
-                // Ana sayfada değilse, ana sayfaya git ve trend kitaplar bölümüne yönlendir
                 window.location.href = 'index.html#trending';
             }
         });
@@ -101,7 +90,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Ana menü linkleri için kaydırma fonksiyonları
 document.addEventListener('DOMContentLoaded', function() {
-    // Tüm menü linklerini seç
     const navLinks = document.querySelectorAll('.nav-links a');
     
     // Her bir link için kontrol et
