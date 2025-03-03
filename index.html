@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hikayelet - Sınırsız Sesli Kitaplar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <script src="navbar.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">Hikaye</div>
+                <div class="nav-links">
+                    <a href="index.html">Ana Sayfa</a>
+                    <a href="#">Kitaplar</a>
+                    <a href="#">Kategoriler</a>
+                    <a href="#">Yazarlar</a>
+                    <a href="#">Hakkımızda</a>
+                </div>
+                <div>
+                    <button class="btn btn-outline">Giriş Yap</button>
+                    <button class="btn btn-primary">Üye Ol</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero"
+        style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1200&q=80')">
+        <div class="container">
+            <h1>Binlerce sesli kitaba sınırsız erişim</h1>
+            <p>İstediğiniz zaman, istediğiniz yerde, en sevdiğiniz kitapları dinleyin. Sınırsız hikayelerle dolu dünyaya
+                hoş geldiniz.</p>
+            <button class="btn btn-primary">14 Gün Ücretsiz Deneyin</button>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Popüler Kategoriler</h2>
+            <div class="category-cards">
+                <div class="category-card">
+                    <div class="category-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1533073526757-2c8ca1df9f1c?auto=format&fit=crop&w=500&q=60')">
+                    </div>
+                    <div class="category-info">
+                        <h3>Kurgu</h3>
+                        <p>1250+ kitap</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-img" style="background-image: url(img/books/bilimkurgu-şehirleri.jpg)"></div>
+                    <div class="category-info">
+                        <h3>Bilim Kurgu</h3>
+                        <p>850+ kitap</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1543002588-bfa74002ed7e?auto=format&fit=crop&w=500&q=60')">
+                    </div>
+                    <div class="category-info">
+                        <h3>Kişisel Gelişim</h3>
+                        <p>720+ kitap</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-img"
+                        style="background-image: url(img/books/Canva-Heart-Shaped-Hands-1920x960.jpg)"></div>
+                    <div class="category-info">
+                        <h3>Romantik</h3>
+                        <p>950+ kitap</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1562673005-7693bd6d6e54?auto=format&fit=crop&w=500&q=60')">
+                    </div>
+                    <div class="category-info">
+                        <h3>Tarih</h3>
+                        <p>580+ kitap</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&w=500&q=60')">
+                    </div>
+                    <div class="category-info">
+                        <h3>Çocuk Kitapları</h3>
+                        <p>1100+ kitap</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="trending">
+        <div class="container">
+            <h2 class="section-title">Trend Kitaplar</h2>
+            <div class="book-cards">
+                <div class="book-card">
+                    <div class="book-img" style="background-image: url(img/books/sıfırdanzirveye.jpeg)"></div>
+                    <div class="book-info">
+                        <h3>Sıfırdan Zirveye</h3>
+                        <p>Kemal Şahin</p>
+                        <a href="book-detail.html?id=sifirdan-zirveye" class="btn btn-sm btn-primary">İncele</a>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-img"
+                        style="background-image: url(img/books/gece-yarisi-kutuphanesi-13654995-55-B.jpg)"></div>
+                    <div class="book-info">
+                        <h3>Gece Yarısı Kütüphanesi</h3>
+                        <p>Matt Haig</p>
+                        <a href="book-detail.html?id=gece-yarisi-kutuphanesi" class="btn btn-sm btn-primary">İncele</a>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-img" style="background-image: url(img/books/karanlığıniçinden.jpeg)"></div>
+                    <div class="book-info">
+                        <h3>Karanlığın İçinden</h3>
+                        <p>Alexandra Bracken</p>
+                        <a href="book-detail.html?id=karanligin-icinden" class="btn btn-sm btn-primary">İncele</a>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-img" style="background-image: url(img/books/zaman\ tüneli.jpeg)"></div>
+                    <div class="book-info">
+                        <h3>Zaman Tüneli</h3>
+                        <p>John Fowles</p>
+                        <a href="book-detail.html?id=zaman-tuneli" class="btn btn-sm btn-primary">İncele</a>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-img" style="background-image: url(img/books/yapayzekaçağı.jpg)"></div>
+                    <div class="book-info">
+                        <h3>Yapay Zeka Çağı</h3>
+                        <p>Byron Reese</p>
+                        <a href="book-detail.html?id=yapay-zeka-cagi" class="btn btn-sm btn-primary">İncele</a>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-img" style="background-image: url(img/books/sessizcıglık.jpg)"></div>
+                    <div class="book-info">
+                        <h3>Sessiz Çığlık</h3>
+                        <p>Lisa Gardner</p>
+                        <a href="book-detail.html?id=sessiz-ciglik" class="btn btn-sm btn-primary">İncele</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="weekly-books">
+        <div class="container">
+            <h2 class="section-title">Haftanın Kitapları</h2>
+            <div class="book-cards special">
+                <div class="book-card featured">
+                    <div class="book-img" style="background-image: url(img/books/HayatKılavuzu.jpg)"></div>
+                    <div class="book-info">
+                        <span class="featured-label">Editörün Seçimi</span>
+                        <h3>Hayat Bir Kullanım Kılavuzu</h3>
+                        <p>Antonia Macaro</p>
+                        <a href="book-detail.html?id=hayat-bir-kullanim-kilavuzu"
+                            class="btn btn-sm btn-primary">İncele</a>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-img" style="background-image: url(img/books/denizin-alttında.jpg)"></div>
+                    <div class="book-info">
+                        <span class="discount-label">%30 İndirim</span>
+                        <h3>Denizler Altında Yirmi Bin Fersah</h3>
+                        <p>Jules Verne</p>
+                        <a href="book-detail.html?id=denizler-altinda-yirmi-bin-fersah"
+                            class="btn btn-sm btn-primary">İncele</a>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-img" style="background-image: url(img/books/mutlulukreçetesi.jpg)"></div>
+                    <div class="book-info">
+                        <span class="new-label">Yeni</span>
+                        <h3>Mutluluk Reçetesi</h3>
+                        <p>Özenay Özdinç</p>
+                        <a href="book-detail.html?id=mutluluk-recetesi" class="btn btn-sm btn-primary">İncele</a>
+                    </div>
+                </div>
+
+                
+                <div class="book-card">
+                    <div class="book-img" style="background-image: url(img/books/page1-330px-Kürk_Mantolu_Madonna.djvu.jpg)"></div>
+                    <div class="book-info">
+                        <h3>Kürk Mantolu Madonna</h3>
+                        <p>Sabahattin Ali</p>
+                        <span class="featured-label">Klasik</span>
+                        <a href="book-detail.html?id=kurk-mantolu-madonna" class="btn btn-sm btn-primary">İncele</a>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-img" style="background-image: url(img/books/gelecek.jpg)"></div>
+                    <div class="book-info">
+                        <h3>Gelecek</h3>
+                        <p>Dmitry Glukhovsky</p>
+                        <a href="book-detail.html?id=gelecek" class="btn btn-sm btn-primary">İncele</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Neden Hikaye ?</h2>
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Sınırsız Kitap</h3>
+                    <p>10.000'den fazla sesli kitaba tek üyelikle sınırsız erişin.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎧</div>
+                    <h3>Çevrimdışı Dinleme</h3>
+                    <p>Kitapları indirin ve internet bağlantısı olmadan istediğiniz yerde dinleyin.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Kesintisiz Deneyim</h3>
+                    <p>Tüm cihazlarınızda kaldığınız yerden devam edin.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <div class="container">
+            <h2 class="section-title">Fiyatlandırma</h2>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Aylık Plan</h3>
+                        <div class="price">
+                            <span class="currency">₺</span>
+                            <span class="amount">49</span>
+                            <span class="period">/ay</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>Tüm kitaplara sınırsız erişim</li>
+                            <li>Tek cihazda kullanım</li>
+                            <li>Sınırlı indirme hakkı (10 kitap)</li>
+                            <li>Temel ses kalitesi</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-outline btn-block">Şimdi Başlayın</button>
+                </div>
+                <div class="pricing-card featured-plan">
+                    <div class="popular-tag">En Popüler</div>
+                    <div class="pricing-header">
+                        <h3>Yıllık Plan</h3>
+                        <div class="price">
+                            <span class="currency">₺</span>
+                            <span class="amount">39</span>
+                            <span class="period">/ay</span>
+                        </div>
+                        <div class="price-note">Yıllık ödeme (₺468)</div>
+                        <div class="save-tag">%20 Tasarruf</div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>Tüm kitaplara sınırsız erişim</li>
+                            <li>5 cihaza kadar kullanım</li>
+                            <li>Sınırsız indirme hakkı</li>
+                            <li>Yüksek ses kalitesi</li>
+                            <li>Reklamsız deneyim</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-primary btn-block">Şimdi Başlayın</button>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Aile Planı</h3>
+                        <div class="price">
+                            <span class="currency">₺</span>
+                            <span class="amount">89</span>
+                            <span class="period">/ay</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>6 kullanıcıya kadar hesap</li>
+                            <li>Kullanıcı başına 3 cihaza kadar</li>
+                            <li>Sınırsız indirme hakkı</li>
+                            <li>Premium ses kalitesi</li>
+                            <li>Reklamsız deneyim</li>
+                            <li>Özel içeriklere erişim</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-outline btn-block">Şimdi Başlayın</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="cta-shapes">
+            <div class="cta-shape cta-shape-1"></div>
+            <div class="cta-shape cta-shape-2"></div>
+            <div class="cta-shape cta-shape-3"></div>
+            <div class="cta-shape cta-shape-4"></div>
+        </div>
+        <div class="container">
+            <h2>Hikayeler sizi bekliyor!</h2>
+            <p>Şimdi üye olun ve 14 günlük ücretsiz deneme sürümüyle binlerce sesli kitaba anında erişin. Hikayelet ile
+                kitaplar cebinizde.</p>
+            <button class="btn btn-light">Hemen Başlayın</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Hikaye</h3>
+                    <ul>
+                        <li><a href="#">Hakkımızda</a></li>
+                        <li><a href="#">Kariyer</a></li>
+                        <li><a href="#">Basın</a></li>
+                        <li><a href="#">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Destek</h3>
+                    <ul>
+                        <li><a href="#">SSS</a></li>
+                        <li><a href="#">Yardım Merkezi</a></li>
+                        <li><a href="#">Hesap</a></li>
+                        <li><a href="#">Gizlilik Politikası</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Keşfet</h3>
+                    <ul>
+                        <li><a href="#">Tüm Kategoriler</a></li>
+                        <li><a href="#">En Çok Okunanlar</a></li>
+                        <li><a href="#">Yeni Çıkanlar</a></li>
+                        <li><a href="#">Yazarlar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Bizi Takip Edin</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/grouptaiga/">Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/company/taiga-group/posts/?feedView=all">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Hikaye. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,1385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --primary: #ff6600;
+    --dark: #333;
+    --light: #f5f5f5;
+    --gray: #777;
+}
+
+body {
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* HEADER VE NAVIGASYON */
+header {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: all 0.3s;
+}
+
+header.scrolled {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+/* BUTONLAR */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: white;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.btn:hover, .btn-hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 102, 0, 0.3);
+}
+
+.btn-sm {
+    padding: 8px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: auto;
+    align-self: flex-start;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-sm:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 102, 0, 0.2);
+}
+
+.btn-lg {
+    padding: 12px 30px;
+    font-size: 16px;
+}
+
+.btn-block {
+    display: block;
+    width: 80%;
+    margin: 0 auto 30px auto;
+}
+
+.btn-light {
+    background-color: white;
+    color: var(--primary);
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 50px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.btn-light:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    background-color: transparent;
+    color: white;
+    border-color: white;
+}
+
+/* HERO BÖLÜMÜ */
+    .hero {
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1200&q=80');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 100px 0;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        font-size: 20px;
+        margin-bottom: 30px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+/* BÖLÜM BAŞLIKLARI */
+.section-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* KATEGORİLER */
+.categories {
+    padding: 60px 0;
+}
+
+.category-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.category-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+}
+
+.category-img {
+    height: 150px;
+    background-color: #ddd;
+    background-size: cover;
+    background-position: center;
+}
+
+.category-info {
+    padding: 15px;
+}
+
+.category-info h3 {
+    margin-bottom: 10px;
+}
+
+/* TREND KİTAPLAR */
+.trending {
+    padding: 60px 0;
+    background-color: white;
+}
+
+/* KİTAP KARTLARI (GENEL) */
+.book-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.book-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+    transition: all 0.4s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid rgba(0,0,0,0.03);
+}
+
+.book-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0,0,0,0.1);
+}
+
+.book-img {
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.4s ease;
+}
+
+.book-card:hover .book-img {
+    transform: scale(1.05);
+}
+
+.book-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    position: relative;
+}
+
+.book-info h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.book-card:hover .book-info h3 {
+    color: var(--primary);
+}
+
+.book-info p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* ETİKETLER */
+.featured-label, .discount-label, .new-label {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 8px 15px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    z-index: 10;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.featured-label {
+    background-color: #FFD700;
+    color: #333;
+}
+
+.discount-label {
+    background-color: #FF4081;
+    color: white;
+}
+
+.new-label {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* HAFTANIN KİTAPLARI */
+.weekly-books {
+    padding: 80px 0;
+    background-color: white;
+    position: relative;
+}
+
+.weekly-books::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(0,0,0,0.1), transparent);
+}
+
+.weekly-books .section-title {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 50px;
+    position: relative;
+    display: inline-block;
+}
+
+.weekly-books .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 4px;
+    background-color: var(--primary);
+    border-radius: 2px;
+}
+
+.book-cards.special {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* HAFTANIN KİTAPLARI - FEATURED CARD */
+.book-card.featured {
+    grid-column: span 2;
+    background-color: #fff9f2;
+    border-left: 5px solid var(--primary);
+}
+
+/* HAFTANIN KİTAPLARI KART BOYUT DÜZENLEMELERİ */
+.weekly-books .book-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.weekly-books .book-img {
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.4s ease;
+    object-fit: cover;
+    max-height: 280px;
+}
+
+.weekly-books .book-card.featured .book-img {
+    max-height: 280px;
+    height: 280px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.weekly-books .book-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ÖZELLİKLER */
+.features {
+    padding: 60px 0;
+}
+
+.feature-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* ÖZELLİK KARTLARI */
+.feature-card {
+    text-align: center;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(255, 102, 0, 0.05);
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover::before {
+    height: 100%;
+}
+
+.feature-icon {
+    font-size: 40px;
+    color: var(--primary);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+    transform: scale(1.2);
+}
+
+.feature-card h3 {
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.feature-card:hover h3 {
+    color: var(--primary);
+}
+
+.feature-card p {
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover p {
+    color: var(--dark);
+}
+
+/* FİYATLANDIRMA */
+.pricing {
+    padding: 60px 0;
+}
+
+.pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.pricing-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+}
+
+.featured-plan {
+    border: 2px solid var(--primary);
+    transform: translateY(-15px);
+}
+
+.featured-plan:hover {
+    transform: translateY(-20px);
+}
+
+.popular-tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--primary);
+    color: white;
+    padding: 5px 15px;
+    font-size: 12px;
+    font-weight: bold;
+    border-bottom-left-radius: 10px;
+}
+
+.pricing-header {
+    padding: 30px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.pricing-header h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+.currency {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--gray);
+}
+
+.amount {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.period {
+    font-size: 16px;
+    color: var(--gray);
+}
+
+.price-note {
+    font-size: 14px;
+    color: var(--gray);
+    margin-bottom: 10px;
+}
+
+.save-tag {
+    display: inline-block;
+    background-color: #E8F5E9;
+    color: #4CAF50;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.pricing-features {
+    padding: 30px;
+}
+
+.pricing-features ul {
+    list-style: none;
+}
+
+.pricing-features ul li {
+    padding: 10px 0;
+    position: relative;
+    padding-left: 25px;
+}
+
+.pricing-features ul li:before {
+    content: "✓";
+    color: var(--primary);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* CTA BÖLÜMÜ */
+/* CTA BÖLÜMÜ - MODERNLEŞTİRİLMİŞ VERSİYON */
+.cta {
+    background: linear-gradient(135deg, #ff7e34 0%, #ff5500 100%);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    margin: 40px 20px;
+    box-shadow: 0 10px 30px rgba(255, 102, 0, 0.2);
+}
+
+.cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZGllbnQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojZmZmZmZmO3N0b3Atb3BhY2l0eTowLjEiIC8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6I2ZmZmZmZjtzdG9wLW9wYWNpdHk6MCIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxwYXRoIGQ9Ik0wLDAgTDEwMCwwIEwxMDAsMTAwIEwwLDEwMCBaIiBmaWxsPSJ1cmwoI2dyYWRpZW50KSIgLz4KPC9zdmc+');
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.cta .container {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+.cta h2 {
+    font-size: 48px;
+    margin-bottom: 24px;
+    font-weight: 800;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+.cta p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.cta-shapes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.cta-shape {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 8px 32px rgba(255, 102, 0, 0.1);
+    animation: float 8s infinite ease-in-out;
+}
+
+.cta-shape-1 {
+    width: 180px;
+    height: 180px;
+    top: -90px;
+    right: 10%;
+    animation-delay: 0s;
+}
+
+.cta-shape-2 {
+    width: 120px;
+    height: 120px;
+    bottom: -60px;
+    left: 15%;
+    animation-delay: 2s;
+}
+
+.cta-shape-3 {
+    width: 80px;
+    height: 80px;
+    top: 20%;
+    left: 10%;
+    animation-delay: 4s;
+}
+
+.cta-shape-4 {
+    width: 60px;
+    height: 60px;
+    bottom: 20%;
+    right: 5%;
+    animation-delay: 6s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-20px) rotate(5deg);
+    }
+}
+
+/* Modern Buton Stilini Güncelleme */
+.btn-light {
+    background-color: white;
+    color: var(--primary);
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 50px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.btn-light::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--primary);
+    z-index: -1;
+    transition: all 0.5s ease;
+    border-radius: 50px;
+}
+
+.btn-light:hover {
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.btn-light:hover::before {
+    width: 100%;
+}
+
+/* Mobil Responsive Düzenlemeler */
+@media (max-width: 768px) {
+    .cta {
+        padding: 60px 20px;
+        margin: 30px 15px;
+        border-radius: 12px;
+    }
+    
+    .cta h2 {
+        font-size: 36px;
+    }
+    
+    .cta p {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    
+    .btn-light {
+        padding: 14px 32px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cta {
+        padding: 50px 15px;
+        margin: 20px 10px;
+    }
+    
+    .cta h2 {
+        font-size: 28px;
+    }
+    
+    .cta p {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+    
+    .btn-light {
+        padding: 12px 28px;
+        font-size: 15px;
+    }
+    
+    .cta-shape {
+        display: none;
+    }
+}
+
+/* KİTAP DETAY SAYFASI */
+.breadcrumb {
+    display: flex;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.breadcrumb a {
+    color: var(--gray);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    color: var(--primary);
+}
+
+.breadcrumb .separator {
+    margin: 0 10px;
+    color: #ccc;
+}
+
+.breadcrumb .current {
+    color: var(--dark);
+    font-weight: 500;
+}
+
+.book-detail-container {
+    display: flex;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.book-cover {
+    flex: 1;
+    max-width: 300px;
+}
+
+.book-cover img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.book-details {
+    flex: 2;
+}
+
+.book-title {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.book-author {
+    font-size: 18px;
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+
+.book-rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.stars {
+    color: #FFD700;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.rating-count {
+    color: var(--gray);
+    font-size: 14px;
+}
+
+.book-actions {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.book-meta {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.meta-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.meta-label {
+    font-size: 14px;
+    color: var(--gray);
+}
+
+.meta-value {
+    font-weight: bold;
+}
+
+/* TAB SİSTEMİ */
+.tabs {
+    margin: 40px 0;
+}
+
+.tab-buttons {
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--gray);
+    border-bottom: 3px solid transparent;
+}
+
+.tab-btn.active {
+    color: var(--primary);
+    border-bottom: 3px solid var(--primary);
+}
+
+.tab-content {
+    display: none;
+    line-height: 1.6;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.tab-content.active {
+    display: block;
+    opacity: 1;
+    height: auto;
+    overflow: visible;
+}
+
+.tab-content h3 {
+    margin-bottom: 15px;
+}
+
+.tab-content p {
+    margin-bottom: 10px;
+}
+
+/* SES OYNATICI */
+.sample-player {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin: 20px 0;
+}
+
+.player-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.play-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 6px;
+    background-color: #eee;
+    border-radius: 3px;
+    position: relative;
+}
+
+.progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 30%;
+    background-color: var(--primary);
+    border-radius: 3px;
+}
+
+.time {
+    font-size: 14px;
+    color: var(--gray);
+}
+
+.related-books {
+    margin: 60px 0;
+}
+
+/* DEĞERLENDİRMELER */
+.reviews {
+    margin: 20px 0;
+}
+
+.review {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.reviewer {
+    font-weight: bold;
+}
+
+.review-date {
+    color: var(--gray);
+    font-size: 14px;
+}
+
+.review-rating {
+    color: #FFD700;
+    margin-bottom: 10px;
+}
+
+.review-text {
+    line-height: 1.6;
+}
+
+/* FOOTER */
+/* FOOTER - MODERNLEŞTİRİLMİŞ VERSİYON */
+footer {
+    background-color: #2d2d2d;
+    color: #f5f5f5;
+    padding: 60px 0 30px;
+    margin-top: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-weight: 700;
+    color: #ffffff;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.footer-column h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: var(--primary);
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+.footer-column:hover h3::after {
+    width: 60px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.footer-column ul li:hover {
+    transform: translateX(5px);
+}
+
+.footer-column ul li a {
+    color: #b0b0b0;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    display: block;
+    position: relative;
+}
+
+.footer-column ul li a::before {
+    content: '›';
+    margin-right: 8px;
+    opacity: 0;
+    transform: translateX(-8px);
+    display: inline-block;
+    transition: all 0.3s ease;
+    color: var(--primary);
+}
+
+.footer-column ul li a:hover {
+    color: #ffffff;
+}
+
+.footer-column ul li a:hover::before {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.copyright {
+    margin-top: 50px;
+    text-align: center;
+    color: #9e9e9e;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    position: relative;
+    z-index: 2;
+    font-size: 15px;
+}
+
+/* Scroll Top Button modernizasyonu */
+#scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 22px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+#scroll-top.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#scroll-top:hover {
+    transform: translateY(-5px) scale(1.05);
+    background: linear-gradient(135deg, var(--primary) 0%, #ff8533 100%);
+    box-shadow: 0 8px 25px rgba(255, 102, 0, 0.4);
+}
+
+#scroll-top::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: var(--primary);
+    opacity: 0.3;
+    transform: scale(0);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#scroll-top:hover::before {
+    transform: scale(1.5);
+    opacity: 0;
+}
+
+/* Footer pattern efekti */
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.03' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+    z-index: 1;
+}
+
+/* Responsive düzenlemeler */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .footer-column h3 {
+        font-size: 18px;
+    }
+    
+    .copyright {
+        margin-top: 40px;
+        padding-top: 20px;
+        font-size: 14px;
+    }
+    
+    #scroll-top {
+        width: 45px;
+        height: 45px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+/* MOBİL MENÜ */
+.mobile-menu-btn {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mobile-menu-btn span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--dark);
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+
+/* SCROLL TOP BUTONU */
+#scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+    opacity: 0;
+    transition: all 0.3s;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+#scroll-top.show {
+    opacity: 1;
+    display: block;
+}
+
+#scroll-top:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* RESPONSIVE TASARIM */
+@media (max-width: 768px) {
+    .feature-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .hero h1 {
+        font-size: 36px;
+    }
+    
+    .book-detail-container {
+        flex-direction: column;
+    }
+    
+    .book-cover {
+        max-width: 100%;
+    }
+    
+    .book-meta {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .pricing-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .book-card.featured {
+        grid-column: span 1;
+    }
+    
+    .book-cards.special {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        z-index: 100;
+    }
+    
+    .nav-links.show {
+        display: flex;
+    }
+    
+    .nav-links a {
+        padding: 10px 0;
+    }
+    
+    .mobile-menu-btn {
+        display: flex;
+    }
+    
+    .book-actions {
+        flex-direction: column;
+    }
+    
+    .tab-buttons {
+        flex-wrap: wrap;
+    }
+    
+    #scroll-top {
+        bottom: 70px;
+        right: 20px;
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+    
+    .book-cards.special {
+        grid-template-columns: 1fr;
+    }
+}
+
+.logo {
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: var(--primary); 
+    opacity: 0.8;
+}
+
+.weekly-books .section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #333;
+    position: relative;
+    display: inline-block; /* Bu satır çok önemli */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.weekly-books .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 100px;
+    height: 4px; 
+    background-color: #ff6600; 
+}

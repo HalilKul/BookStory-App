@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gece Yarısı Kütüphanesi - Hikayelet</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <script src="navbar.js"></script>
+    <script src="book-detail.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">Hikaye</div>
+                <div class="nav-links">
+                    <a href="index.html">Ana Sayfa</a>
+                    <a href="#">Kitaplar</a>
+                    <a href="#">Kategoriler</a>
+                    <a href="#">Yazarlar</a>
+                    <a href="#">Hakkımızda</a>
+                </div>
+                <div>
+                    <button class="btn btn-outline">Giriş Yap</button>
+                    <button class="btn btn-primary">Üye Ol</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Ana Sayfa</a>
+            <span class="separator">/</span>
+            <a href="#">Kategoriler</a>
+            <span class="separator">/</span>
+            <a href="#">Kurgu</a>
+            <span class="separator">/</span>
+            <span class="current">Gece Yarısı Kütüphanesi</span>
+        </div>
+
+        <div class="book-detail-container">
+            <div class="book-cover">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1606094033i/54120408.jpg" alt="Gece Yarısı Kütüphanesi">
+            </div>
+            <div class="book-details">
+                <h1 class="book-title">Gece Yarısı Kütüphanesi</h1>
+                <p class="book-author">Yazan: Zeynep Kaya</p>
+                <div class="book-rating">
+                    <div class="stars">★★★★☆</div>
+                    <span class="rating-count">(426 değerlendirme)</span>
+                </div>
+                <p class="book-description">
+                    Gece Yarısı Kütüphanesi, hayatın seçimlerini sorgulayan ve pişmanlıkları ele alan felsefi bir
+                    yolculuk hikayesidir. Ana karakter Nora, yaşam ve ölüm arasında asılı kaldığı gizemli bir
+                    kütüphanede, yaşayabileceği farklı hayatları deneyimleme fırsatı bulur.
+                </p>
+                <div class="book-actions">
+                    <button class="btn btn-primary btn-lg">Dinlemeye Başla</button>
+                    <button class="btn btn-outline btn-lg">Kütüphaneme Ekle</button>
+                </div>
+                <div class="book-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Süre</span>
+                        <span class="meta-value">8s 42dk</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Yayınlanma Tarihi</span>
+                        <span class="meta-value">15 Mart 2025</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Dil</span>
+                        <span class="meta-value">Türkçe</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tabs">
+            <div class="tab-buttons">
+                <button class="tab-btn active" data-tab="summary">Özet</button>
+                <button class="tab-btn" data-tab="details">Detaylar</button>
+                <button class="tab-btn" data-tab="reviews">Değerlendirmeler</button>
+                <button class="tab-btn" data-tab="sample">Sesli Örnek</button>
+            </div>
+            <div id="summary" class="tab-content active">
+                <h3>Kitap Hakkında</h3>
+                <p>
+                    Gece Yarısı Kütüphanesi, çağdaş kurgu türünün en etkileyici örneklerinden biridir. Hayatında
+                    pişmanlıkları olan ana karakter Nora Seed, intihar teşebbüsünde bulunur ve kendini Gece Yarısı
+                    Kütüphanesi adında gizemli bir yerde bulur.
+                </p>
+                <p>
+                    Bu kütüphane, sonsuz sayıda kitapla doludur ve her kitap Nora'nın farklı seçimler yaptığı alternatif
+                    bir hayatını içerir. Nora, kütüphaneci Bay Elm'in rehberliğinde farklı hayat versiyonlarını
+                    deneyimlemeye başlar.
+                </p>
+                <p>
+                    Roman, pişmanlık, seçimler, mutluluk ve hayatın anlamı gibi derin felsefi konuları ele alırken,
+                    okuyucuya "Ya şöyle olsaydı?" sorusunu düşündürtür. Nora'nın yolculuğu, hayattaki küçük
+                    mutlulukların ve mevcut olanı takdir etmenin önemini vurgular.
+                </p>
+                <p>
+                    Zeynep Kaya'nın akıcı anlatımı ve duygusal derinliği ile Gece Yarısı Kütüphanesi, okuyucuları hem
+                    düşündüren hem de derinden etkileyen bir eser olarak öne çıkıyor.
+                </p>
+            </div>
+            <div id="details" class="tab-content">
+                <h3>Kitap Detayları</h3>
+                <div class="book-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Yazar</span>
+                        <span class="meta-value">Zeynep Kaya</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Seslendiren</span>
+                        <span class="meta-value">Halil Kul</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Yayınevi</span>
+                        <span class="meta-value">Hikaye Yayınları</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Sayfa Sayısı</span>
+                        <span class="meta-value">328</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Kategori</span>
+                        <span class="meta-value">Kurgu, Felsefe</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Çıkış Tarihi</span>
+                        <span class="meta-value">15 Mart 2025</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">ISBN</span>
+                        <span class="meta-value">978-605-XXX-XXX-X</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Dil</span>
+                        <span class="meta-value">Türkçe</span>
+                    </div>
+                </div>
+            </div>
+            <div id="reviews" class="tab-content">
+                <h3>Okuyucu Değerlendirmeleri</h3>
+                <div class="reviews">
+                    <div class="review">
+                        <div class="review-header">
+                            <span class="reviewer">Mehmet Yılmaz</span>
+                            <span class="review-date">15 Şubat 2025</span>
+                        </div>
+                        <div class="review-rating">★★★★★</div>
+                        <p class="review-text">
+                            Girişimcilik yolunda harika bir rehber. Kemal Şahin'in deneyimlerinden aldığım ilham gerçekten değerli. 
+                            Her başarısız girişimin aslında bir öğrenme fırsatı olduğunu anladım.
+                        </p>
+                    </div>
+                    <div class="review">
+                        <div class="review-header">
+                            <span class="reviewer">Ayşe Demir</span>
+                            <span class="review-date">3 Mart 2025</span>
+                        </div>
+                        <div class="review-rating">★★★★☆</div>
+                        <p class="review-text">
+                            Pratik öneriler ve gerçek hayat deneyimleriyle dolu bir kitap. Özellikle genç girişimciler için 
+                            mutlaka okunması gereken bir kaynak. Biraz daha detaylı olabilirmiş ama genel olarak çok faydalı.
+                        </p>
+                    </div>
+                    <div class="review">
+                        <div class="review-header">
+                            <span class="reviewer">Derya Öztürk</span>
+                            <span class="review-date">18 Şubat 2025</span>
+                        </div>
+                        <div class="review-rating">★★★★★</div>
+                        <p class="review-text">
+                            Nefes kesici bir distopya! Alexandra Bracken'ın hayal gücü gerçekten etkileyici. 
+                            Karakterlerin gelişimi ve dünya kurgusu şahane. Genç okurlar için mutlaka tavsiye edilir.
+                        </p>
+                    </div>
+                    <div class="review">
+                        <div class="review-header">
+                            <span class="reviewer">Ali Teknoloji</span>
+                            <span class="review-date">20 Mart 2025</span>
+                        </div>
+                        <div class="review-rating">★★★★★</div>
+                        <p class="review-text">
+                            Yapay zeka hakkında en kapsamlı ve anlaşılır kitap! Byron Reese, karmaşık teknolojik 
+                            kavramları herkesin anlayabileceği bir dille açıklıyor. Mutlaka okunmalı.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="sample" class="tab-content">
+                <h3>Sesli Kitap Örneği</h3>
+                <p>Gece Yarısı Kütüphanesi'nden 5 dakikalık bir kesit dinleyin.</p>
+                <div class="sample-player">
+                    <p>Seslendiren: Halil Kul</p>
+                    <div class="player-controls">
+                        <div class="play-btn">►</div>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="time">1:28 / 5:00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="related-books">
+            <h2 class="section-title">Benzer Kitaplar</h2>
+            <div class="book-cards">
+                <div class="book-card">
+                    <div class="book-img" style="background-image: url('https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1541952433i/42599138.jpg')"></div>
+                    <div class="book-info">
+                        <h3>Zaman Yolcusu</h3>
+                        <p>Ahmet Yılmaz</p>
+                        <a href="book-detail.html?id=zaman-yolcusu" class="btn btn-sm btn-primary">İncele</a>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-img" style="background-image: url('https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1540946413i/42359272.jpg')"></div>
+                    <div class="book-info">
+                        <h3>Unutulmuş Dünyalar</h3>
+                        <p>Selma Koçak</p>
+                        <a href="book-detail.html?id=unutulmus-dunyalar" class="btn btn-sm btn-primary">İncele</a>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-img" style="background-image: url('https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1490171343i/34661984.jpg')"></div>
+                    <div class="book-info">
+                        <h3>Sonsuz Kapılar</h3>
+                        <p>Oğuz Kaan</p>
+                        <a href="book-detail.html?id=sonsuz-kapilar" class="btn btn-sm btn-primary">İncele</a>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-img" style="background-image: url(img/books/aliceharikalar.jpg)"></div>
+                    <div class="book-info">
+                        <h3>Alice Harikalar Diyarında</h3>
+                        <p>Lewis Carroll</p>
+                        <a href="book-detail.html?id=Alice-Harikalar-Diyarında" class="btn btn-sm btn-primary">İncele</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Hikayelet</h3>
+                    <ul>
+                        <li><a href="#">Hakkımızda</a></li>
+                        <li><a href="#">Kariyer</a></li>
+                        <li><a href="#">Basın</a></li>
+                        <li><a href="#">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Destek</h3>
+                    <ul>
+                        <li><a href="#">SSS</a></li>
+                        <li><a href="#">Yardım Merkezi</a></li>
+                        <li><a href="#">Hesap</a></li>
+                        <li><a href="#">Gizlilik Politikası</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Keşfet</h3>
+                    <ul>
+                        <li><a href="#">Tüm Kategoriler</a></li>
+                        <li><a href="#">En Çok Okunanlar</a></li>
+                        <li><a href="#">Yeni Çıkanlar</a></li>
+                        <li><a href="#">Yazarlar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Bizi Takip Edin</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/grouptaiga/">Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/company/taiga-group/posts/?feedView=all">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Hikaye. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
